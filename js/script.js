@@ -112,5 +112,5 @@ darkMode.addEventListener('click',()=>{
     hobbies['background'] = 'radial-gradient(circle at 12.3% 19.3%,rgb(95, 209, 249) 0%,rgb(85, 88, 218) 100.2%)';
 
     const mainBackground = document.getElementsByTagName("body")[0];
-    mainBackground.style['background-image'] = 'url("../img/vivid-blurred-colorful-wallpaper-background.jpg")';
+    mainBackground.style['background-image'] = url("../img/vivid-blurred-colorful-wallpaper-background.jpg");
 })
