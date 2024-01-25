@@ -1,0 +1,75 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: radial-gradient(circle at 3.1% 8.2%, rgb(248, 250, 107) 0%, rgb(238, 148, 148) 98.2%);    
+}
+:root{
+    --background: transparent;
+    --padding: 12px 15px;
+    --font-clr: #2E2E2E;
+}
+
+.header{
+    background: var(--background);
+    padding: var(--padding);
+    color:var(--font-clr);
+    font-weight: bold;
+    font-size: 32px;
+    position: sticky;
+    text-align: center;
+}
+
+.introduction,.list{
+    margin:1.5%;
+    padding:20px;
+    border-radius: 50px;
+    border:solid  var(--font-clr);
+    background-color: #FF8C00;
+    color: #2E2E2E;
+}
+
+.list>.heading{
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+
+.item{
+    padding:20px;
+    margin:20px;
+    display: flex;
+    gap:15px;
+    border: solid 1px;
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item img{
+    width: 100px;
+    border-radius: 25px;
+    flex: 0.5 1 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+    color:#2E2E2E;
+}
+a:hover{
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.4s;
+}

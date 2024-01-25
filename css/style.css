@@ -1,0 +1,288 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("/img/vivid-blurred-colorful-wallpaper-background.jpg");
+}
+
+:root{
+    --background: radial-gradient(circle at 12.3% 19.3%,rgb(95, 209, 249) 0%,rgb(85, 88, 218) 100.2%);
+    --padding: 12px 15px;
+    --font-clr: #1e375a;
+}
+
+.header{
+    background: var(--background);
+    display: flex;
+    padding: var(--padding);
+    color:var(--font-clr);
+    font-weight: bold;
+    font-size: 22px;
+    position: sticky;
+    align-items: center;
+}
+.header.border{
+    border-bottom: solid 1px;
+}
+.logo{
+    flex:1 1 auto;
+    padding: var(--padding);
+}
+
+.logo a{
+    color:#1e375a;
+    text-decoration: none;
+}
+.logo a:hover{
+    color:blue;
+    font-size: 24px;
+    transition:0.4s;
+}
+
+.mode-selector img{
+    width:30px;
+    margin-right:10px;
+    align-self: center;
+    position: relative;
+    top:2px
+}
+
+.mode-selector>.hide{
+    display: none;
+}
+
+
+div.menu-icon{
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+    padding:var(--padding);
+
+}
+.menu-icon div{
+    width:30px;
+    height: 3px;
+    background-color: var(--font-clr);
+    margin:3px 0;
+    transition:0.4s;
+}
+
+.menu-icon.active div:nth-child(1){
+    transform: rotate(-45deg) translate(-6px, 7px);
+}
+.menu-icon.active div:nth-child(2){
+    opacity: 0;
+}
+.menu-icon.active div:nth-child(3){
+    transform: rotate(45deg) translate(-6px, -7px);
+}
+
+.menu{
+    transition: 0.4s;
+    background: var(--background);
+}
+.menu>.items{
+    background: var(--background);
+    padding: 18px 30px;
+}
+.menu>.items:last-child{
+    border-bottom: solid 1px;
+}
+
+.items a{
+    text-decoration: none;
+    color:#1e375a;
+}
+
+.items a:hover{
+    font-weight: bold;
+}
+
+.items.hidden{
+    display: none;
+}
+
+.introduction{
+    padding:24px;
+    background: var(--background);
+    max-width: 1800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:5vb;
+    margin:1.5%;
+    border-radius: 52% 36% 40% 12%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:12x;
+}
+
+.introduction>.img img{
+    border-radius: 50%;
+    width: 200px;
+    border:solid 1px;
+    margin:var(--padding)
+}
+.introduction>.img{
+    flex: 0 0 auto;
+}
+.introduction>.text{
+    
+    text-align: center;
+    color:black;
+}
+
+.hobbies,.projects,.contact{
+    background: var(--background);
+    padding: var(--padding);
+    margin: var(--padding);
+    color:var(--font-clr);
+    border-radius: 50px;
+    margin:5vb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom:1rem;
+}
+.heading:hover{
+    font-size: 32px;
+    font-weight: bolder;
+    transition: 0.4s;
+}
+
+.hobbies-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hobbies-list a{
+    text-decoration: none;
+}
+
+.anime,.music,.novel{
+    text-align: center;
+    color:firebrick;
+    font-weight: bold;
+    border: solid 1px var(--font-clr);
+    width:200px;
+    border-radius:  90px;
+}
+
+.anime:hover,.music:hover,.novel:hover{
+    width: 250px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.anime img{
+    width:150px;
+}
+
+.music{
+    color:lightgrey
+}
+
+.novel{
+    color:lightskyblue;
+}
+
+.music img{
+    width:100px;
+    position: relative;
+    top:10px;
+}
+
+.novel img{
+    width:100px;
+    position: relative;
+    top:10px;
+}
+
+.projects{
+    margin-bottom:150px;
+    align-items: baseline;
+    gap:10px;
+
+    
+}
+.projects>.heading{
+    align-self: center;
+}
+.projects>.heading:hover{
+    font-size: 32px;
+    transition: 0.4s;
+    font-weight: bolder;
+}
+
+.projects a{
+    text-decoration: none;
+}
+.projects a:visited{
+    color:var(--font-clr)
+}
+.projects a:hover{
+    font-weight: bold;
+    color:blue;
+}
+
+.wids img,.etch-a-sketch img{
+    width:150px;
+    border-radius: 50%;
+    border: solid 1px;
+}
+
+.wids,.etch-a-sketch{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-left: 5vb;
+}
+
+.wids:hover,.etch-a-sketch:hover{
+    align-self: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+
+#description{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    background-color: #222222;
+    padding: var(--padding);
+    
+}
+.footer>#contacts{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+.footer img{
+    width: 40px;
+}
+.footer p{
+    color:white;
+    text-align: center;
+    font-size: 12px;
+}
