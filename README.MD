@@ -1,6 +1,6 @@
 # Personal Website 
-->Hobbies
-  -> Anime
-  -> Novel
-  -> Music
--> Projects
+##Hobbies
+  - Anime
+  - Novel
+  - Music
+## Projects
